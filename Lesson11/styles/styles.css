@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ;
+}
+
+
+.splide__slide img {
+    width:350px;
+    height:300px;
+    object-fit: cover;
+    object-fit: cover; 
+  }
+
+.splide {width: 320px;
+  height: 300px;}
+
+form {width: 240px;}
+
+.form-div{display: flex;
+  flex-direction: column;
+}
+
+.error-text {color:red};
+
+#passshow {display: none;}

@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+        <link rel="stylesheet" href="./styles/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      </head>
+<body>
+    <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+        <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">
+                Prev
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+                Next
+            </button>
+      </div>
+
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img  src="./images/image1.jpg">
+                  </li>
+                  <li class="splide__slide">
+                    <img  src="./images/image2.jpeg">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./images/image3.jpeg">
+                  </li>
+              </ul>
+        </div>
+      </div>
+      <br>
+      <br>
+      <section>
+        <form action="" id="login" method="post">
+          <div class="form-div">
+            <label for="userfield">Username</label>
+            <input type="text" placeholder="username" id="userfield">
+            <p class="error-text" id="error-username"></p>
+          </div>
+         <div class="form-div">
+            <label for="passwfield">Password</label>
+            <input type="password" name="Passw" id="passwfield">
+            <i class="fa-solid fa-eye-slash" id="passhide"></i>
+            <i class="fa-solid fa-eye" id="passshow"></i>
+            <p class="error-text" id="error-Passw"></p>
+         </div>
+         <div class="form-div">
+          <label for="passw2field"> Repeat Password </label>
+          <input type="password" name="Passw2" id="passw2field"  >
+          <p class="error-text" id="error-Passw2"></p>
+       </div>
+       <div>
+        <input type="radio" name="gender" class="radio-gender">
+        <label for="">Male</label>
+        <input type="radio" name="gender" class="radio-gender">
+        <label for="">Female</label>
+        <p class="error-text" id="error-gender"></p>
+       </div>
+       <div>
+        <input type="checkbox" name="agree" id="checkagree">
+        <label for="checkagree"> I agree your terms and conditions</label>
+        <p class="error-text" id="error-agree"></p>
+       </div>
+       <button type="submit">Registration</button>
+        </form>
+      </section>
+<script src="./script.js"></script>
+</body>
+</html>
